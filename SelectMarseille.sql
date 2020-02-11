@@ -1,0 +1,1 @@
+SELECT * FROM nom_naf1933;

@@ -1,0 +1,20 @@
+CREATE TABLE hist_etab (
+siren VARCHAR(9) COMMENT "Numéro Siren",
+nic    VARCHAR(5) COMMENT  "Numéro interne de classement de l'établissement",
+siret VARCHAR(14) COMMENT "Numéro Siret",
+dateFin    DATETIME COMMENT "Date de fin d'une période d'historique d'un établissement",
+dateDebut DATETIME COMMENT "Date de début d'une période d'historique d'un établissement",
+etatAdministratifEtablissement VARCHAR(1) COMMENT  "État administratif de l’établissement",
+changementEtatAdministratifEtablissement VARCHAR(5) COMMENT "Indicatrice de changement de l’état administratif de l’établissement",
+enseigne1Etablissement VARCHAR(50) COMMENT "Première ligne d’enseigne de l’établissement",
+enseigne2Etablissement VARCHAR(50) COMMENT "Deuxième ligne d’enseigne de l’établissement",
+enseigne3Etablissement VARCHAR(50) COMMENT "Troisième ligne d’enseigne de l’établissement",
+changementEnseigneEtablissement    VARCHAR(5) COMMENT "Indicatrice de changement de l’enseigne de l’établissement",
+denominationUsuelleEtablissement VARCHAR(100) COMMENT "Dénomination usuelle de l’établissement",
+changementDenominationUsuelleEtablissement VARCHAR(5) COMMENT "Indicatrice de changement de la dénomination usuelle de l’unité légale",
+activitePrincipaleEtablissement    VARCHAR(6) COMMENT "Activité principale de l'établissement pendant la période",
+nomenclatureActivitePrincipaleEtablissement VARCHAR(8) COMMENT "Nomenclature d’activité de la variable activitePrincipaleEtablissement",
+changementActivitePrincipaleEtablissement VARCHAR(5) COMMENT "    Indicatrice de changement de l’activité principale de l’établissement",
+caractereEmployeurEtablissement    VARCHAR(1) COMMENT "Caractère employeur de l’établissement",
+changementCaractereEmployeurEtablissement VARCHAR(5) COMMENT "Indicatrice de changement du caractère employeur de l’établissement"
+);
